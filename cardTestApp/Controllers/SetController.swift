@@ -125,6 +125,10 @@ class SetController: UIViewController {
             controller.sectionDocId = sectionDocumentId
             controller.setDocId = set.documentId
             controller.cards = cards
+        } else if segue.identifier == segues.ScheduleSegue {
+            guard let controller = segue.destination as? Calandar_Controller,
+                  let set = currentSet else { return }
+            controller.setToStudy = set
         }
     }
 }

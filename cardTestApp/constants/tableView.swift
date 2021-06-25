@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum cells {
     static let sectionCell = "tableCell"
@@ -18,3 +19,5 @@ enum segues {
     static let setToCards = "setToCards"
     static let ScheduleSegue = "ScheduleSegue"
 }
+
+

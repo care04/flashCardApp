@@ -12,6 +12,7 @@ target 'cardTestApp' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'FSCalendar'
 
   target 'cardTestAppTests' do
     inherit! :search_paths
