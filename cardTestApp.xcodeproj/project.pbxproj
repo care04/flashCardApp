@@ -26,6 +26,8 @@
 		FA586B3E264994B8002BE643 /* SetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA586B3D264994B8002BE643 /* SetController.swift */; };
 		FA586B3F264994B8002BE643 /* SetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA586B3D264994B8002BE643 /* SetController.swift */; };
 		FA7353D02686206400A7F3A5 /* Calandar Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7353CF2686206400A7F3A5 /* Calandar Controller.swift */; };
+		FA7353D126863B1200A7F3A5 /* answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C7617264D6EE4006AEFB6 /* answer.swift */; };
+		FA7353D326863B3200A7F3A5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7353D226863B3200A7F3A5 /* File.swift */; };
 		FA979338266A73F5007EEB20 /* CreateUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA979337266A73F5007EEB20 /* CreateUserController.swift */; };
 		FA97933A266A815B007EEB20 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA979339266A815B007EEB20 /* SectionCell.swift */; };
 		FAB5BA0526497C02009C02A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5BA0426497C02009C02A1 /* AppDelegate.swift */; };
@@ -78,6 +80,7 @@
 		FA586B33264990D4002BE643 /* tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableView.swift; sourceTree = "<group>"; };
 		FA586B3D264994B8002BE643 /* SetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetController.swift; sourceTree = "<group>"; };
 		FA7353CF2686206400A7F3A5 /* Calandar Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calandar Controller.swift"; sourceTree = "<group>"; };
+		FA7353D226863B3200A7F3A5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		FA979337266A73F5007EEB20 /* CreateUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserController.swift; sourceTree = "<group>"; };
 		FA979339266A815B007EEB20 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		FAB5BA0126497C02009C02A1 /* cardTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,8 +166,11 @@
 		FA586B32264990C8002BE643 /* constants */ = {
 			isa = PBXGroup;
 			children = (
-				FA586B33264990D4002BE643 /* tableView.swift */,
+				FAC654B4265806EB00279571 /* constants.swift */,
+				FAC654BA26580F5400279571 /* TableViewConstants.swift */,
+				FAC654AE2658053700279571 /* sectionViewController.swift */,
 				FA3C7617264D6EE4006AEFB6 /* answer.swift */,
+				FA586B33264990D4002BE643 /* tableView.swift */,
 			);
 			path = constants;
 			sourceTree = "<group>";
@@ -211,7 +217,6 @@
 				FAB5BA0626497C02009C02A1 /* SceneDelegate.swift */,
 				FAC654B3265806BF00279571 /* FireBase  */,
 				FAC654AA265804F600279571 /* New Controllers */,
-				FA586B32264990C8002BE643 /* constants */,
 				FAED2975264AD26F0088D6FA /* custom stuff */,
 				FA586B2226498DAA002BE643 /* FireStoreDataBase */,
 				FA586B3C2649949F002BE643 /* Controllers */,
@@ -245,7 +250,6 @@
 		FAC654AA265804F600279571 /* New Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FAC654AE2658053700279571 /* sectionViewController.swift */,
 			);
 			path = "New Controllers";
 			sourceTree = "<group>";
@@ -253,8 +257,6 @@
 		FAC654B3265806BF00279571 /* FireBase  */ = {
 			isa = PBXGroup;
 			children = (
-				FAC654B4265806EB00279571 /* constants.swift */,
-				FAC654BA26580F5400279571 /* TableViewConstants.swift */,
 			);
 			path = "FireBase ";
 			sourceTree = "<group>";
@@ -262,9 +264,11 @@
 		FAED2975264AD26F0088D6FA /* custom stuff */ = {
 			isa = PBXGroup;
 			children = (
+				FA586B32264990C8002BE643 /* constants */,
 				FA13BD2F264C4AA0002C6C56 /* CardCell.swift */,
 				FA979339266A815B007EEB20 /* SectionCell.swift */,
 				FAC41206266A9D0000461F39 /* SetCell.swift */,
+				FA7353D226863B3200A7F3A5 /* File.swift */,
 			);
 			path = "custom stuff";
 			sourceTree = "<group>";
@@ -562,6 +566,7 @@
 				FA7353D02686206400A7F3A5 /* Calandar Controller.swift in Sources */,
 				FA586B34264990D4002BE643 /* tableView.swift in Sources */,
 				FAC41207266A9D0000461F39 /* SetCell.swift in Sources */,
+				FA7353D326863B3200A7F3A5 /* File.swift in Sources */,
 				FA979338266A73F5007EEB20 /* CreateUserController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +578,7 @@
 				FA586B1E26498B90002BE643 /* TestFireStore.swift in Sources */,
 				FA586B35264990D4002BE643 /* tableView.swift in Sources */,
 				FA586B2E26498E38002BE643 /* FireStoreConstants.swift in Sources */,
+				FA7353D126863B1200A7F3A5 /* answer.swift in Sources */,
 				FA586B2526498DBF002BE643 /* FireStoreData.swift in Sources */,
 				FA586B3F264994B8002BE643 /* SetController.swift in Sources */,
 			);

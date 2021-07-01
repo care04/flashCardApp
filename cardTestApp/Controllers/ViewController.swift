@@ -4,6 +4,7 @@
 //
 //  Created by Care Farrar on 5/10/21.
 //
+import UserNotifications
 import FirebaseAuth
 import FirebaseFirestore
 import GoogleSignIn

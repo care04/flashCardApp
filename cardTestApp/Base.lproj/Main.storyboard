@@ -124,12 +124,15 @@
                                 <action selector="LogoutAction:" destination="BYZ-38-t0r" id="hjD-XP-H1k"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="+" id="ijs-3U-DEt">
-                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="AddSection:" destination="BYZ-38-t0r" id="Rsr-8S-vww"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="+" id="ijs-3U-DEt">
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="AddSection:" destination="BYZ-38-t0r" id="Rsr-8S-vww"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Schedule" id="pQP-xS-Rr4"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="NewSectionViewHeightConstraint" destination="H8f-jk-6x0" id="W6m-Xd-LUW"/>
@@ -521,7 +524,7 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="useVeryShortWeekdaySymbols" value="NO"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderSelectionColor">
-                                        <color key="value" systemColor="labelColor"/>
+                                        <color key="value" systemColor="tertiarySystemBackgroundColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
                                         <integer key="value" value="0"/>
@@ -618,7 +621,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZa-bE-et4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3388.125" y="87.676056338028175"/>
+            <point key="canvasLocation" x="3227" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GKc-6K-x7R">
@@ -775,7 +778,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhG-GM-Kja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1207" y="88"/>
+            <point key="canvasLocation" x="-951" y="88"/>
         </scene>
         <!--Create User Controller-->
         <scene sceneID="KxV-JD-1Co">
@@ -893,7 +896,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXB-ge-yRR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-462" y="88"/>
+            <point key="canvasLocation" x="-206" y="88"/>
         </scene>
     </scenes>
     <resources>
@@ -918,6 +921,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
